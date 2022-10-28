@@ -1,0 +1,48 @@
+{
+    "name": "my-app",
+    "version": "1.0.0",
+    "description": "",
+    "scripts": {
+        "start": "node ./index.js",
+        "debug": "export NODE_ENV=azure-stage && nodemon ./src/index.js",
+        "test": "jest test --coverage --testPathPattern=src.*spec.js",
+        "build:staging": "env-cmd -f .env.staging npm run build"
+    },
+    "author": "Kulwinder",
+    "license": "ISC",
+    "dependencies": {
+        "axios": "0.27.2",
+        "express": "^4.18.2",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "react-scripts": "^5.0.1"
+    },
+    "devDependencies": {
+        "@babel/preset-env": "^7.19.4",
+        "@babel/preset-react": "^7.18.6",
+        "babel-jest": "^29.2.2",
+        "jest": "^27.5.1",
+        "react-test-renderer": "^18.2.0"
+    },
+    "engines": {
+        "node": "12.x",
+        "npm": "6.x"
+    },
+    "babel": {
+        "presets": [
+            "es2015",
+            "stage-0"
+        ],
+        "ignore": [
+            "node_modules"
+        ],
+        "plugins": [
+            "transform-runtime"
+        ]
+    },
+    "jest": {
+        "testURL": "http://localhost:1234"
+    },
+    "homepage": "http://mywebsite.com/relativepath"
+
+}

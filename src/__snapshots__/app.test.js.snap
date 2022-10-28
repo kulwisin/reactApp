@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Information App 1`] = `
+<div
+  className="App"
+>
+  <div>
+    <label
+      htmlFor="search"
+    >
+      Search by Name :
+      <input
+        id="search"
+        onChange={[Function]}
+        placeholder="Type..."
+        type="text"
+      />
+    </label>
+    <div>
+      <div
+        className="tableDetails"
+      >
+        <table
+          className="tableIndex"
+          data={Object {}}
+        >
+          <tr>
+            <th>
+              Name
+            </th>
+            <th>
+              Gender
+            </th>
+            <th>
+              Emial
+            </th>
+            <th>
+              Phone
+            </th>
+            <th>
+              More Info
+            </th>
+          </tr>
+        </table>
+      </div>
+      <div
+        className="userDetail"
+      >
+        <h2>
+          User Details Section
+        </h2>
+      </div>
+    </div>
+    <div
+      className="recordLength"
+    >
+      <p>
+        Records 
+        0
+         
+      </p>
+    </div>
+  </div>
+</div>
+`;
